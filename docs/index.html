@@ -1,11 +1,60 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Very Educational Game</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>The Button Game</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
+<style>
+  .spawnbutton {
+    font-size: 20px;
+    margin: 5px
+  }
+  .biggerbutton {
+    font-size: 25px;
+  }
+  .redbutton {
+    font-size: 25px;
+    background-color: red;
+    height: 100px;
+  }
+  .notification {
+    font-size: 25px;
+    font-family: monospace;
+    color: red;
+  }
+  .yellowbutton{
+    font-size: 25px;
+    background-color: yellow;
+    height: 100px;
+  }
+    h1 {
+      font-family: cursive;
+      margin: auto;
+    }
+  .buttonlog{
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
+  table, td, th{
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+</style>  
 <body>
-
-<button>Cool Button</button>
-
+  <audio id="myAudio">
+    <source src="tada.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="quack">
+    <source src="duck.mp3" type="audio/mpeg">
+  </audio>
+  <button class="spawnbutton" id="originalspawnbutton">This button spawns another button!</button>
+<script src="scripts.js"></script>
+  
+  
 </body>
+
 </html>
